@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-    imported requests, and json functions
+    lets bring requests, and json functions
+    to our work space
 """
 import requests
 
