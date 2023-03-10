@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 """
-define function number_of_subscribers
+Return the number of subscribers
+from any subreddit given
 """
 import requests
 
 
 def number_of_subscribers(subreddit):
     url = f'https://www.reddit.com/r/{subreddit}/about.json'
-    headers = {'User-agent': 'Mozilla/5.0'}
-    res = requests.get(url, headers=headers, allow_redirects=False)
-    if res.status_code == 200:
-        data = res.json()
+    headers = {'User-Agent': 'Fab'}
+    response = requests.get(url, headers=headers)
+    if response.status_code == 200:
+        data = response.json()
         return data['data']['subscribers']
-    else:
-        return 0
+    return 0
