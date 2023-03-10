@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-Finding hot top 10 post
+Fetching the hot top 10 post in a given subreddit
 """
 import requests
 
 
 def top_ten(subreddit):
     url = 'https://www.reddit.com/r/{}/hot.json?limit=10'.format(subreddit)
-    headers = {'User-Agent': 'Myapi-app'}
+    headers = {'User-Agent': 'Fab'}
 
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
