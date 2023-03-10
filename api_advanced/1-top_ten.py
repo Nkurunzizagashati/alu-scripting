@@ -1,24 +1,24 @@
 #!/usr/bin/python3
 """
-Queries the Reddit API and prints the titles of the first 10 hot posts
-listed for a given subreddit.
+    Queries the Reddit API and prints the titles
+    of the first 10 hot posts
+    listed for a given subreddit.
 """
-
 import requests
 
 
 def top_ten(subreddit):
     """
-    Queries the Reddit API and prints the titles of the first 10 hot posts
-    listed for a given subreddit.
+        Queries the Reddit API and prints the titles of the first 10 hot posts
+        listed for a given subreddit.
 
-    Args:
-        subreddit (str): The name of the subreddit to get the top 10 hot
-        posts for.
+        Args:
+            subreddit (str): The name of the subreddit to get the top 10 hot
+            posts for.
 
-    Returns:
-        None: If the subreddit is not valid, or if there was an error getting
-        the subreddit data.
+        Returns:
+            None: If the subreddit is not valid, or if there was an error getting
+            the subreddit data.
     """
     # Set the API endpoint URL
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"
