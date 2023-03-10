@@ -13,7 +13,7 @@ def recurse(subreddit, hot_list=[], after=None):
                 to specify the name of subreddit you want to deal with
     hot_list:
                 to store the titles for hot posts
-    
+
     after:
             to give us the last page we were on if there is other pages
             available
